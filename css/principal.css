@@ -1,0 +1,250 @@
+/*
+------------------- RESET DA MODELO -------------------
+*/
+#titulos,
+.conteudos-nav {
+	display: none !important;
+	visibility: hidden !important;
+}
+.corpo,
+.conteudos {
+	margin: 0;
+	max-width: 2000px;
+	padding: 0;
+}
+/*
+------------------------- menu home -------------------------
+*/
+.navegacao ul li .menu-home {
+	color: #ffffff;
+	position: relative;
+}
+.navegacao ul li .menu-home:before {
+	background: #ffffff;
+	bottom: 0;
+	content: "";
+	height: 4px;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+.menu-movel li .menu-home {
+	background: #003366;
+	color: #ffffff;
+	pointer-events: none;
+}
+/*
+----------------------- BANNERS -----------------------
+*/
+#banners .owl-carousel {
+	margin: 0 auto;
+	max-width: 2000px;
+	overflow: visible;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+#banners .owl-controls {
+	bottom: -5px;
+	margin-top: 0;
+	position: absolute;
+	width: 100%;
+}
+/*
+----------------- ULTIMAS NOTICIAS --------------------
+*/
+.noticias {
+	float: none;
+	margin: 30px auto;
+	margin-bottom: 45px;
+	max-width: 1170px;
+	padding: 0 2%;
+	width: 100%;
+}
+.noticias header {
+	width: 100%;
+}
+.noticias header h1 {
+	color: #168e32;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
+	text-transform: uppercase;
+}
+.noticias header h1 span {
+	display: block;
+	font-size: 3rem;
+	font-weight: 800;
+	line-height: 2.5rem;
+}
+.noticias-link {
+	border: solid 2px #bababa;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	color: #bababa;
+	display: inline-block;
+	float: right;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.9rem;
+	max-width: 120px;
+	margin-top: 12px;
+	text-align: center;
+	width: 100%;
+}
+.noticias-link:hover,
+.noticias-link:focus {
+	border: solid 2px #168e32;
+	color: #168e32;
+	text-decoration: none;
+}
+.noticias .wrap {
+	align-content: center;
+	-webkit-display: -webkit-box;
+	-webkit-display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	float: none;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.noticia {
+	background: #ffffff;
+	border: solid 1px #45aaff;
+	font-family: 'Raleway', sans-serif;
+	max-width: 264px;
+	min-width: 264px;
+	position: relative;
+	width: 100%;
+}
+.noticia:after {
+	background: #45aaff;
+	bottom: 0;
+	content: '';
+	height: 5px;
+	left: 34%;
+	position: absolute;
+	width: 80px;
+}
+.noticia:hover,
+.noticia:focus {
+	border: solid 1px #168e32;
+}
+.noticia:hover:after,
+.noticia:focus:after {
+	background: #168e32;
+}
+.noticia a {
+	display: block;
+}
+.noticia a:hover,
+.noticia a:focus {
+	text-decoration: none;
+}
+.noticia-data {
+	background: #efefef;
+	color: #aaaeb5;
+	display: block;
+	font-size: 1.7rem;
+	font-weight: 500;
+	margin-bottom: 8px;
+	padding: 8px;
+	text-align: center;
+	width: 100%;
+}
+.noticia-data i {
+	margin-right: 4px;
+}
+.noticia-titulo {
+	color: #04509c;
+	display: block;
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin: 0;
+	padding: 0 8px;
+}
+.noticia-chamada {
+	color: #a9a9a8;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+	padding: 2px 8px;
+	width: 100%;
+}
+/*
+  --------------- HOSPITAIS CREDENCIADOS --------------
+*/
+.hospitais {
+	float: none;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 0 2%;
+	width: 100%;
+}
+.hospitais h1 {
+	color: #003366;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
+	text-transform: uppercase;
+}
+.hospitais h1 span {
+	display: block;
+	font-size: 3rem;
+	font-weight: 800;
+	line-height: 2.5rem;
+}
+.hospitais img {
+	border: solid 1px #f1f1f1;
+}
+.hospitais .owl-theme .owl-controls .active span {
+	background: #7da2c8;
+}
+.hospitais .owl-controls .owl-page span {
+	background: transparent;
+	border: solid 1px #7da2c8;
+}
+/*
+  --------------- MEDIA QUERIES --------------
+*/
+@media screen and (max-width:1140px) {
+.noticias .wrap {
+	align-content: space-between;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.noticia {
+	margin: 15px 2%;
+}
+}
+@media screen and (max-width:767px) {
+#banners {
+	margin-top: 60px;
+}
+.noticias {
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+}
